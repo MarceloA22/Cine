@@ -4,7 +4,7 @@ let butacaOcupada: number = 0,
 let cantButacas: number = Number(prompt("Ingrese la cantidad de butacas"));
 let butacas: boolean[] = new Array(cantButacas);
 for (indice = 0; indice < cantButacas; indice++) {
-  butacas[indice] = Math.random() < 0.55;
+  butacas[indice] = Math.random() < 0.55;//!!?
   if (butacas[indice] === true) {
     butacaOcupada++;
   } else {
@@ -14,3 +14,4 @@ for (indice = 0; indice < cantButacas; indice++) {
 console.log(
   `De ${cantButacas} butacas, ${butacaOcupada} están ocupadas y ${butacalibre} libres`
 );
+//el ejercicio esta bien. 
